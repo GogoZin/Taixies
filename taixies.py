@@ -38,12 +38,18 @@ def main():
 	global pow
 	url = str(input(Fore.YELLOW + "Target : " + Fore.WHITE))
 	thr = int(input(Fore.YELLOW + "Threads : " + Fore.WHITE))
+	po = str(input(Fore.YELLOW + "Port : " + Fore.WHITE))
 	cho = str(input(Fore.YELLOW + "Get Some Fresh Proxies ? (y/n) : " + Fore.WHITE))
 	if cho =='y':
-		rsp = requests.get('https://www.proxy-list.download/api/v1/get?type=http')
-		with open("proxies.txt","wb") as fp:
-			fp.write(rsp.content)
-			print(Fore.CYAN + "Sucess Download Proxies List !")
+		if po =='80':
+			rsp = requests.get('https://www.proxy-list.download/api/v1/get?type=http&anon=anonymous')
+			with open("proxies.txt","wb") as fp:
+				fp.write(rsp.content)
+				print(Fore.CYAN + "Sucess Download Proxies List !")
+		else:
+			rsp = requests.get('https://www.proxy-list.download/api/v1/get?type=https&anon=anonymous')
+			with open("proxies","wb") as fp:
+				fp.write(rsp.content)
 	else:
 		pass
 	list = str(input(Fore.YELLOW + "Proxies List (proxies.txt): " + Fore.WHITE))
