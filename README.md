@@ -16,7 +16,13 @@ This Scripts Show You How To Launch Proxies Ddos Using [requests] This Module
     python3 Taixies.py
     
 ********************************************************************************
+##UPDATE
 
+    Add Https Proxies
+    
+    Add Anonymous Proxies
+
+********************************************************************************
 All Script Just In Teach 
 
 Don't Attack Any Gov Site
