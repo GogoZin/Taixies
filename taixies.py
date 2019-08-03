@@ -25,10 +25,10 @@ MMMMMMMMMMN0xollllllllllllox0NMMMMMMMMMM
 MMMMMMMMMMMMMMWNXK0000KXNWMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 """)
-print(Fore.CYAN + "  CC Attack Tool Using Requests Module")
-print(Fore.CYAN + "         \\\\Proxy Version//")
-print(Fore.CYAN + "      Code By GogoZin. -2019/8/2")
-print(Fore.CYAN + "##Update Add Https And Anonymous Proxies###")
+print(Fore.CYAN + "   CC Attack Tool Using Requests Module")
+print(Fore.CYAN + "          \\\\Proxy Version//")
+print(Fore.CYAN + "       Code By GogoZin. -2019/8/2")
+print(Fore.RED + "##Update Add Https And Anonymous Proxies###")
 
 
 def main():
