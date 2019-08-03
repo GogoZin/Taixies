@@ -28,6 +28,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 print(Fore.CYAN + "  CC Attack Tool Using Requests Module")
 print(Fore.CYAN + "         \\\\Proxy Version//")
 print(Fore.CYAN + "      Code By GogoZin. -2019/8/2")
+print(Fore.CYAN + "##Update Add Https And Anonymous Proxies###")
 
 
 def main():
@@ -48,8 +49,9 @@ def main():
 				print(Fore.CYAN + "Sucess Download Proxies List !")
 		else:
 			rsp = requests.get('https://www.proxy-list.download/api/v1/get?type=https&anon=anonymous')
-			with open("proxies","wb") as fp:
+			with open("proxies.txt","wb") as fp:
 				fp.write(rsp.content)
+				print(Fore.CYAN + "Sucess Download Https Proxies List !")
 	else:
 		pass
 	list = str(input(Fore.YELLOW + "Proxies List (proxies.txt): " + Fore.WHITE))
