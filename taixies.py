@@ -43,12 +43,12 @@ def main():
 	cho = str(input(Fore.YELLOW + "Get Some Fresh Proxies ? (y/n) : " + Fore.WHITE))
 	if cho =='y':
 		if po =='80':
-			rsp = requests.get('https://www.proxy-list.download/api/v1/get?type=http&anon=anonymous')
+			rsp = requests.get('https://api.proxyscrape.com/?request=displayproxies&proxytype=http&country=all&anonymity=elite&ssl=no')
 			with open("proxies.txt","wb") as fp:
 				fp.write(rsp.content)
 				print(Fore.CYAN + "Sucess Download Proxies List !")
 		else:
-			rsp = requests.get('https://www.proxy-list.download/api/v1/get?type=https&anon=anonymous')
+			rsp = requests.get('https://api.proxyscrape.com/?request=displayproxies&proxytype=http&country=all&anonymity=elite&ssl=yes')
 			with open("proxies.txt","wb") as fp:
 				fp.write(rsp.content)
 				print(Fore.CYAN + "Sucess Download Https Proxies List !")
