@@ -23,6 +23,8 @@ This Scripts Show You How To Launch Proxies Ddos Using [requests] This Module
     Add Anonymous Proxies -2019/8/3
     
     Change Proxies' API -2019/8/4
+    
+    Add Threads Optimization And More Proxies List -2019/8/5
 
 ********************************************************************************
 All Script Just In Teach 
