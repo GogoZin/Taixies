@@ -70,6 +70,8 @@ def main():
 	else:
 		pass
 	list = str(input(Fore.YELLOW + "Proxies List (proxies.txt): " + Fore.WHITE))
+	pprr = open(list).readlines()
+	print(Fore.YELLOW + "Proxies Count : " + Fore.WHITE + "%d" %len(pprr))
 	pow = int(input(Fore.YELLOW + "CC.Power (1-100) :" + Fore.WHITE))
 	opth()
 	
