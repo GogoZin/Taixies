@@ -51,6 +51,7 @@ def main():
 	global proxy
 	global url
 	global pow
+	global thr
 	url = str(input(Fore.YELLOW + "Target : " + Fore.WHITE))
 	thr = int(input(Fore.YELLOW + "Threads : " + Fore.WHITE))
 	po = str(input(Fore.YELLOW + "Port : " + Fore.WHITE))
